@@ -1,6 +1,6 @@
-# @anireact/typescript-config
+# @anireact/lerna-config
 
-> anireact’s TypeScript config.
+> anireact’s Lerna config.
 
 ````bash
 $ yarn add -DW lerna @anireact/lerna-config
