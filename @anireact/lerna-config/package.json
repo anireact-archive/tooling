@@ -1,0 +1,12 @@
+{
+    "name": "@anireact/lerna-config",
+    "version": "1.0.0-wip.0",
+    "description": "anireact’s Lerna config.",
+    "main": "index.js",
+    "repository": "https://github.com/anireact/tooling/tree/master/packages/lerna-config",
+    "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
+    "license": "MIT",
+    "peerDependencies": {
+        "lerna": "^3.4.3"
+    }
+}
