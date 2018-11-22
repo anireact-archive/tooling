@@ -1,6 +1,6 @@
 {
     "name": "@anireact/babel-config",
-    "version": "1.0.0-wip.0",
+    "version": "1.0.0-wip.1",
     "description": "anireact’s Babel config.",
     "main": "index.js",
     "repository": "https://github.com/anireact/tooling/tree/master/packages/babel-config",
