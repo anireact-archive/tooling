@@ -1,0 +1,12 @@
+{
+    "name": "@anireact/typescript-config",
+    "version": "1.0.0-wip.0",
+    "description": "anireact’s TypeScript config.",
+    "main": "index.js",
+    "repository": "https://github.com/anireact/tooling/tree/master/packages/typescript-config",
+    "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
+    "license": "MIT",
+    "peerDependencies": {
+        "typescript": "^3.2.0-rc"
+    }
+}
