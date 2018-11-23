@@ -1,0 +1,40 @@
+{
+    "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
+    "repository": "anireact/tooling",
+    "private": true,
+    "workspaces": [
+        "@anireact/*"
+    ],
+    "scripts": {
+        "lint": "eslint --ext '.js,.ts' -f ./node_modules/eslint-codeframe-formatter . && prettier --list-different './**/*.{js,jsx,ts,tsx,css,less,scss,html,json,md}'",
+        "fix": "eslint --fix --ext '.js,.ts' -f ./node_modules/eslint-codeframe-formatter . && prettier --write './**/*.{js,jsx,ts,tsx,css,less,scss,html,json,md}'"
+    },
+    "devDependencies": {
+        "@anireact/new": "./@anireact/new",
+        "@babel/cli": "^7.1.5",
+        "@babel/core": "^7.1.6",
+        "@commitlint/cli": "^7.2.1",
+        "@commitlint/config-conventional": "^7.1.2",
+        "@commitlint/config-lerna-scopes": "^7.2.1",
+        "babel-eslint": "^10.0.1",
+        "dedent": "^0.7.0",
+        "enquirer": "^2.0.7",
+        "eslint": "^5.9.0",
+        "eslint-cli": "^1.1.1",
+        "eslint-codeframe-formatter": "^1.0.2",
+        "eslint-plugin-array-func": "^3.1.0",
+        "eslint-plugin-babel": "^5.3.0",
+        "eslint-plugin-fp": "^2.3.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jest": "^22.0.0",
+        "eslint-plugin-no-use-extend-native": "^0.3.12",
+        "eslint-plugin-prettier": "^3.0.0",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-typescript": "^0.13.0",
+        "eslint-plugin-unicorn": "^6.0.1",
+        "lerna": "^3.4.3",
+        "prettier": "^1.15.2",
+        "typescript": "^3.2.0-rc",
+        "typescript-eslint-parser": "^21.0.1"
+    }
+}
