@@ -2,15 +2,10 @@
 
 > anireact’s Prettier config.
 
-```bash
-$ yarn add -DW prettier @anireact/commitlint-config
-```
-
-```javascript
-// Create prettier.config.js
-module.exports = require('@anireact/prettier-config');
-```
+Docs: [anireact/tooling].
 
 # License
 
 MIT
+
+[anireact/tooling]: https://github.com/anireact/tooling/blob/master/README.md

@@ -1,6 +1,6 @@
 {
     "name": "@anireact/babel-config",
-    "version": "1.0.0-wip.2",
+    "version": "1.0.0-wip.6",
     "description": "anireact’s Babel config.",
     "main": "index.js",
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
@@ -9,11 +9,10 @@
     "bugs": "https://github.com/anireact/tooling/issues?q=is:issue+label:@anireact/babel-config",
     "license": "MIT",
     "peerDependencies": {
-        "@babel/core": "^7.1.6",
+        "@babel/core": "^7.1.6"
+    },
+    "dependencies": {
         "@babel/plugin-transform-runtime": "^7.1.0",
-        "@babel/preset-env": "^7.1.6",
-        "@babel/preset-typescript": "^7.1.0",
-        "@babel/runtime": "^7.1.5",
-        "core-js": "^2.5.7"
+        "@babel/preset-env": "^7.1.6"
     }
 }

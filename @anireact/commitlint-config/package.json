@@ -1,6 +1,6 @@
 {
     "name": "@anireact/commitlint-config",
-    "version": "1.0.0-wip.2",
+    "version": "1.0.0-wip.6",
     "description": "anireact’s CommitLint config.",
     "main": "index.js",
     "repository": "anireact/tooling",
@@ -9,7 +9,9 @@
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
     "license": "MIT",
     "peerDependencies": {
-        "@commitlint/cli": "^7.2.1",
+        "@commitlint/cli": "^7.2.1"
+    },
+    "dependencies": {
         "@commitlint/config-conventional": "^7.1.2",
         "@commitlint/config-lerna-scopes": "^7.2.1"
     }

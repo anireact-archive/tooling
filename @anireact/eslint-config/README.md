@@ -2,23 +2,10 @@
 
 > anireact’s ESLint config.
 
-```bash
-yarn add -DW @babel/core eslint @anireact/babel-config
-```
+Docs: [anireact/tooling].
 
-```javascript
-// Create .eslintrc.js
-module.exports = {
-    // ↓ Force IDEA lint TypeScript files with ESLint.
-    parser: 'babel-eslint',
-    extends: ['@anireact'],
-};
-```
-
-> **NB:** Don’t forget to setup [Babel config].
-
-## License
+# License
 
 MIT
 
-[babel config]: https://github.com/anireact/tooling/tree/master/@anireact/babel-config
+[anireact/tooling]: https://github.com/anireact/tooling/blob/master/README.md

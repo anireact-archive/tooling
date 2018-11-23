@@ -2,17 +2,13 @@
 
 > anireact’s CommitLint config.
 
-```bash
-$ yarn add -DW @commitlint/{cli,config-{conventional,lerna-scopes}}
-$ yarn add -DW @anireact/commitlint-config
-```
+Docs: [anireact/tooling].
 
-```javascript
-// Create commitlint.config.js
-module.exports = {
-    extends: ['@anireact/commitlint-config'],
-};
-```
+# License
+
+MIT
+
+[anireact/tooling]: https://github.com/anireact/tooling/blob/master/README.md
 
 # License
 
