@@ -9,7 +9,3 @@ Docs: [anireact/tooling].
 MIT
 
 [anireact/tooling]: https://github.com/anireact/tooling/blob/master/README.md
-
-# License
-
-MIT
