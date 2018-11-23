@@ -356,8 +356,14 @@ module.exports = {
         'prefer-destructuring': [
             error,
             {
-                array: false,
-                object: true,
+                VariableDeclarator: {
+                    array: false,
+                    object: true,
+                },
+                AssignmentExpression: {
+                    array: false,
+                    object: false,
+                },
             },
             {
                 enforceForRenamedProperties: false,
@@ -395,7 +401,6 @@ module.exports = {
         'import/no-cycle': error,
         'import/no-useless-path-segments': error,
 
-        'import/export': error,
         'import/no-named-as-default': error,
         'import/no-named-as-default-member': error,
         'import/no-deprecated': error,

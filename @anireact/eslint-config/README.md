@@ -3,11 +3,7 @@
 > anireact’s ESLint config.
 
 ```bash
-$ yarn add -DW \
-    @anireact/babel-config \
-    eslint babel-eslint prettier typescript typescript-eslint-parser \
-    eslint-plugin-{array-func,babel,fp,import,jest} \
-    eslint-plugin-{no-use-extend-native,prettier,promise,typescript,unicorn}
+yarn add -DW @babel/core eslint @anireact/babel-config
 ```
 
 ```javascript
