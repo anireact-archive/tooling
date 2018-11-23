@@ -41,7 +41,7 @@ module.exports = {
         'no-dupe-args': error,
         'no-dupe-keys': error,
         'no-duplicate-case': error,
-        'no-empty': error,
+        'no-empty': [error, { allowEmptyCatch: true }],
         'no-empty-character-class': error,
         'no-ex-assign': error,
         'no-extra-boolean-cast': error,
@@ -130,7 +130,7 @@ module.exports = {
         'no-useless-concat': error,
         'no-useless-escape': error,
         'no-useless-return': error,
-        'no-void': error,
+        'no-void': off, // Fuck off.
         'no-warning-comments': off, // TODO: Configure.
         'no-with': error,
         'prefer-promise-reject-errors': error,
@@ -155,7 +155,7 @@ module.exports = {
         'no-shadow-restricted-names': error,
         'no-undef': error,
         'no-undef-init': off, // Fuck off.
-        'no-undefined': error,
+        'no-undefined': off, // Fuck off.
         'no-unused-vars': off, // Covered by TypeScript.
         'no-use-before-define': off, // Covered by TypeScript.
         // endregion Variables

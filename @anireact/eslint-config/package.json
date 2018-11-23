@@ -1,13 +1,15 @@
 {
     "name": "@anireact/eslint-config",
-    "version": "1.0.0-wip.1",
+    "version": "1.0.0-wip.2",
     "description": "anireact’s ESLint config.",
     "main": "index.js",
-    "repository": "https://github.com/anireact/tooling/tree/master/packages/eslint-config",
+    "repository": "anireact/tooling",
+    "homepage": "https://github.com/anireact/tooling/tree/master/@anireact/eslint-config",
+    "bugs": "https://github.com/anireact/tooling/issues?q=is:issue+label:@anireact/eslint-config",
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
     "license": "MIT",
     "peerDependencies": {
-        "@anireact/babel-config": "1.0.0-wip.1",
+        "@anireact/babel-config": "1.0.0-wip.2",
         "babel-eslint": "^10.0.1",
         "eslint": "^5.9.0",
         "eslint-codeframe-formatter": "^1.0.2",
