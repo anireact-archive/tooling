@@ -3,13 +3,14 @@
 > Spawns pkgs in your monorepo for you.
 
 ```bash
-$ yarn add -DW @anireact/new
+yarn add -DW @anireact/new
 ```
 
 ```javascript
 // Create new.config.js
 /* eslint-env node */
 
+const dedent = require('dedent');
 const { Confirm } = require('enquirer');
 
 const lerna = require('./lerna');
@@ -53,21 +54,32 @@ module.exports = {
     package: x => x,
 
     // Post-spawn commands.
-    finalize: async () => {
+    finalize: async pkg_ => {
         const add = await new Confirm({
             message: 'Add to Git:',
             initial: true,
         }).run();
 
         return [
+            { root: true, run: ['yarn'] },
+            ['yarn', 'add', '@babel/runtime', 'core-js'],
+            ['prettier', '--write', './**/*.{js,jsx,ts,tsx,css,less,scss,html,json,md}'],
             {
-                root: true,
-                run: ['yarn'],
+                file: 'README.md',
+                // language=Markdown
+                data: dedent`
+                    # ${pkg_.name}
+
+                    > ${pkg_.description}
+
+                    ## License
+
+                    MIT
+
+                `,
             },
-            add && {
-                run: ['git', 'add', './*'],
-            },
-        ].filter(Boolean);
+            add && ['git', 'add', './*'],
+        ];
     },
 };
 ```

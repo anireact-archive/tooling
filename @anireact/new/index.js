@@ -20,7 +20,7 @@ const { sync: spawn } = require('cross-spawn');
 const { Input, Select } = require('enquirer');
 const { sync: mkdirp } = require('mkdirp');
 const stringify = require('json-stable-stringify');
-const { resolve } = require('upath');
+const { resolve, dirname, basename } = require('upath');
 const yargs = require('yargs');
 
 const prompt = (Type, message, options = {}, initial = undefined) => new Type({ message, initial, ...options }).run();
@@ -114,7 +114,6 @@ const prompt = (Type, message, options = {}, initial = undefined) => new Type({ 
     const p = argv.p || undefined;
 
     if (typeof name !== 'string') throw new TypeError('Invalid name.');
-    if (!/^[\w-]+$/u.test(name)) throw new TypeError('Invalid name.');
 
     if (!config.scopes.includes(scope)) throw new TypeError('Invalid scope.');
     if (!config.workspaces.includes(workspace)) throw new TypeError('Invalid workspace.');
@@ -153,19 +152,57 @@ const prompt = (Type, message, options = {}, initial = undefined) => new Type({ 
     mkdirp(path);
     writeFile(resolve(path, 'package.json'), stringify(pkg, { space: '  ' }));
 
-    for (const {
-        root,
-        run: [command, ...args],
-        env = {},
-    } of await config.finalize(pkg, name, scope, workspace)) {
-        spawn(command, args, {
-            cwd: root ? config.context : path,
-            stdio: [0, 1, 2],
-            env: {
-                ...process.env,
-                env,
-            },
-        });
+    for (let entry of await config.finalize(pkg, name, scope, workspace)) {
+        entry = await entry;
+
+        if (!entry) continue;
+
+        let run = false;
+        let root = false;
+        let command = '';
+        let args = [];
+        let env = {};
+
+        let write = false;
+        let file = '';
+        let data = '';
+
+        if (Array.isArray(entry)) {
+            run = true;
+            [command, ...args] = entry;
+        }
+
+        if (Array.isArray(entry.run)) {
+            run = true;
+
+            [command, ...args] = entry.run;
+            root = entry.root;
+            env = entry.env;
+        }
+
+        if (typeof entry === 'string') {
+            run = true;
+            command = entry;
+        }
+
+        if (typeof entry.file === 'string') {
+            write = true;
+            ({ file, data } = entry);
+
+            if (typeof data === 'object') data = JSON.stringify(data);
+        }
+
+        if (run)
+            spawn(command, args, {
+                cwd: root ? config.context : path,
+                stdio: [0, 1, 2],
+                env: {
+                    ...process.env,
+                    env,
+                },
+            });
+
+        if (write) writeFile(resolve(path, dirname(file), basename(file)), data);
     }
 })().catch(error => {
     console.error(error);

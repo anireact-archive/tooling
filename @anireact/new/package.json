@@ -1,6 +1,6 @@
 {
     "name": "@anireact/new",
-    "version": "1.0.0-wip.2",
+    "version": "1.0.0-wip.5",
     "description": "Spawns pkgs in your monorepo for you.",
     "main": "index.js",
     "repository": "anireact/tooling",
@@ -15,10 +15,8 @@
         "cosmiconfig": "^5.0.7",
         "cross-spawn": "^6.0.5",
         "enquirer": "^2.0.7",
-        "globby": "^8.0.1",
         "json-stable-stringify": "^1.0.1",
         "mkdirp": "^0.5.1",
-        "parse-glob": "^3.0.4",
         "upath": "^1.1.0",
         "yargs": "^12.0.5"
     }
