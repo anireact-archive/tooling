@@ -1,7 +1,6 @@
 /* eslint-disable global-require */
 
-module.exports = {
-    ignore: [/@types/u],
+module.exports = () => ({
     presets: [
         [
             require('@babel/preset-env'),
@@ -15,4 +14,4 @@ module.exports = {
         require('@babel/preset-typescript'),
     ],
     plugins: [require('@babel/plugin-transform-runtime')],
-};
+});

@@ -7,7 +7,7 @@
     "main": "index.js",
     "name": "@anireact/babel-preset",
     "repository": "anireact/tooling",
-    "version": "1.0.0-wip.7",
+    "version": "1.0.0-wip.8",
     "dependencies": {
         "@babel/plugin-transform-runtime": "^7.1.0",
         "@babel/preset-env": "^7.1.6",
