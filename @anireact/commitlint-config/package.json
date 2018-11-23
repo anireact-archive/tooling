@@ -1,9 +1,11 @@
 {
     "name": "@anireact/commitlint-config",
-    "version": "1.0.0-wip.1",
+    "version": "1.0.0-wip.2",
     "description": "anireact’s CommitLint config.",
     "main": "index.js",
-    "repository": "https://github.com/anireact/tooling/tree/master/packages/commitlint-config",
+    "repository": "anireact/tooling",
+    "homepage": "https://github.com/anireact/tooling/tree/master/@anireact/commitlint-config",
+    "bugs": "https://github.com/anireact/tooling/issues?q=is:issue+label:@anireact/commitlint-config",
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
     "license": "MIT",
     "peerDependencies": {

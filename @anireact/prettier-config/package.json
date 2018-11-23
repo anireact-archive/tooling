@@ -1,9 +1,11 @@
 {
     "name": "@anireact/prettier-config",
-    "version": "1.0.0-wip.1",
+    "version": "1.0.0-wip.2",
     "description": "anireact’s Prettier config.",
     "main": "index.js",
-    "repository": "https://github.com/anireact/tooling/tree/master/packages/prettier-config",
+    "repository": "anireact/tooling",
+    "homepage": "https://github.com/anireact/tooling/tree/master/@anireact/prettier-config",
+    "bugs": "https://github.com/anireact/tooling/issues?q=is:issue+label:@anireact/prettier-config",
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
     "license": "MIT",
     "peerDependencies": {

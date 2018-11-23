@@ -1,10 +1,12 @@
 {
     "name": "@anireact/babel-config",
-    "version": "1.0.0-wip.1",
+    "version": "1.0.0-wip.2",
     "description": "anireact’s Babel config.",
     "main": "index.js",
-    "repository": "https://github.com/anireact/tooling/tree/master/packages/babel-config",
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
+    "repository": "anireact/tooling",
+    "homepage": "https://github.com/anireact/tooling/tree/master/@anireact/babel-config",
+    "bugs": "https://github.com/anireact/tooling/issues?q=is:issue+label:@anireact/babel-config",
     "license": "MIT",
     "peerDependencies": {
         "@babel/core": "^7.1.6",

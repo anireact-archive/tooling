@@ -1,9 +1,11 @@
 {
     "name": "@anireact/typescript-config",
-    "version": "1.0.0-wip.1",
+    "version": "1.0.0-wip.2",
     "description": "anireact’s TypeScript config.",
     "main": "index.js",
-    "repository": "https://github.com/anireact/tooling/tree/master/packages/typescript-config",
+    "repository": "anireact/tooling",
+    "homepage": "https://github.com/anireact/tooling/tree/master/@anireact/typescript-config",
+    "bugs": "https://github.com/anireact/tooling/issues?q=is:issue+label:@anireact/typescript-config",
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
     "license": "MIT",
     "peerDependencies": {
