@@ -1,5 +1,6 @@
 /* eslint-env node */
 
+const dedent = require('dedent');
 const { Confirm } = require('enquirer');
 
 const lerna = require('./lerna');
@@ -43,20 +44,29 @@ module.exports = {
     package: x => x,
 
     // Post-spawn commands.
-    finalize: async () => {
+    finalize: async pkg_ => {
         const add = await new Confirm({
             message: 'Add to Git:',
             initial: true,
         }).run();
 
         return [
+            { root: true, run: ['yarn'] },
+            ['yarn', 'add', '@babel/runtime', 'core-js'],
             {
-                root: true,
-                run: ['yarn'],
+                file: 'README.md',
+                data: dedent`
+                    # ${pkg_.name}
+
+                    > ${pkg_.description}
+
+                    ## License
+
+                    MIT
+                `,
             },
-            add && {
-                run: ['git', 'add', './*'],
-            },
-        ].filter(Boolean);
+            ['prettier', '--write', './**/*.{js,jsx,ts,tsx,css,less,scss,html,json,md}'],
+            add && ['git', 'add', './*'],
+        ];
     },
 };
