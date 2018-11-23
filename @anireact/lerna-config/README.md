@@ -2,18 +2,18 @@
 
 > anireact’s Lerna config.
 
-````bash
+```bash
 $ yarn add -DW lerna @anireact/lerna-config
-````
+```
 
-````json5
+```json5
 // Create lerna.json
 {
-    "extends": "@anireact/lerna-config",
-    "packages": ["@scope/*"],
-    "version": "1.0.0"
+    extends: '@anireact/lerna-config',
+    packages: ['@scope/*'],
+    version: '1.0.0',
 }
-````
+```
 
 > **NB:** Don’t forget to configure [Yarn workspaces].
 
@@ -21,4 +21,4 @@ $ yarn add -DW lerna @anireact/lerna-config
 
 MIT
 
-[Yarn workspaces]: https://yarnpkg.com/lang/en/docs/workspaces/
+[yarn workspaces]: https://yarnpkg.com/lang/en/docs/workspaces/
