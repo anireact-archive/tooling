@@ -1,0 +1,19 @@
+{
+    "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
+    "bugs": "https://github.com/anireact/tooling/issues?q=is:issue+label:@anireact/babel-preset",
+    "description": "anireact’s Babel preset.",
+    "homepage": "https://github.com/anireact/tooling/tree/master/@anireact/babel-preset",
+    "license": "MIT",
+    "main": "index.js",
+    "name": "@anireact/babel-preset",
+    "repository": "anireact/tooling",
+    "version": "1.0.0-wip.7",
+    "dependencies": {
+        "@babel/plugin-transform-runtime": "^7.1.0",
+        "@babel/preset-env": "^7.1.6",
+        "@babel/preset-typescript": "^7.1.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.1.6"
+    }
+}
