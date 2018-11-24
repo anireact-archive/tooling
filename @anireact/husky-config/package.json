@@ -9,7 +9,7 @@
     "repository": "anireact/tooling",
     "version": "1.0.0-wip.9",
     "peerDependencies": {
-        "@anireact/commitlint-config": "^1.0.0-wip.8",
+        "@anireact/commitlint-config": "^1.0.0-wip.9",
         "husky": "^1.2.0"
     }
 }
