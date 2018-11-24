@@ -1,0 +1,15 @@
+{
+    "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
+    "bugs": "https://github.com/anireact/tooling/issues?q=is:issue+label:@anireact/husky-config",
+    "description": "anireact’s Husky config.",
+    "homepage": "https://github.com/anireact/tooling/tree/master/@anireact/husky-config",
+    "license": "MIT",
+    "main": "index.js",
+    "name": "@anireact/husky-config",
+    "repository": "anireact/tooling",
+    "version": "1.0.0-wip.9",
+    "peerDependencies": {
+        "@anireact/commitlint-config": "^1.0.0-wip.8",
+        "husky": "^1.2.0"
+    }
+}
