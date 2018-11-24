@@ -9,10 +9,10 @@
         `# Peer dependencies` \
         @commitlint/cli \
         @babel/core \
-        lerna prettier typescript eslint \
+        lerna prettier typescript eslint husky \
         babel-eslint eslint-codeframe-formatter \
         `# Configs` \
-        @anireact/{babel,commitlint,eslint,lerna,prettier,typescript}-config \
+        @anireact/{babel,commitlint,eslint,husky,lerna,prettier,typescript}-config \
         @anireact/babel-preset \
         `# Tools` \
         @anireact/new \
@@ -20,7 +20,7 @@
         dedent enquirer mkdirp
     ```
 
-    _PowerShell guys suck._
+    _PowerShell guys suck 🤷‍♀️_
 
 2. Set up `package.json` (like in this repo).
 3. Create configs (copy from this repo, then tweak).
