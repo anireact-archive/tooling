@@ -1,6 +1,6 @@
 {
     "name": "@anireact/babel-config",
-    "version": "1.0.0-wip.8",
+    "version": "1.0.0-wip.9",
     "description": "anireact’s Babel config.",
     "main": "index.js",
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
@@ -9,6 +9,6 @@
     "bugs": "https://github.com/anireact/tooling/issues?q=is:issue+label:@anireact/babel-config",
     "license": "MIT",
     "peerDependencies": {
-        "@anireact/babel-preset": "1.0.0-wip.8"
+        "@anireact/babel-preset": "1.0.0-wip.9"
     }
 }

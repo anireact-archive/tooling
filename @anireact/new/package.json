@@ -1,6 +1,6 @@
 {
     "name": "@anireact/new",
-    "version": "1.0.0-wip.8",
+    "version": "1.0.0-wip.9",
     "description": "Spawns pkgs in your monorepo for you.",
     "main": "index.js",
     "repository": "anireact/tooling",
