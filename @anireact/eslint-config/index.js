@@ -151,8 +151,8 @@ module.exports = {
         'no-delete-var': error,
         'no-label-var': error,
         'no-restricted-globals': error,
-        'no-shadow': [error, { hoist: 'all', builtinGlobals: true }],
-        'no-shadow-restricted-names': error,
+        'no-shadow': off, // Fuck off.
+        'no-shadow-restricted-names': off, // Fuck off.
         'no-undef': error,
         'no-undef-init': off, // Fuck off.
         'no-undefined': off, // Fuck off.

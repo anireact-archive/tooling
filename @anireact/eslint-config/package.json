@@ -1,6 +1,6 @@
 {
     "name": "@anireact/eslint-config",
-    "version": "1.0.0-wip.8",
+    "version": "1.0.0-wip.9",
     "description": "anireact’s ESLint config.",
     "main": "index.js",
     "repository": "anireact/tooling",
@@ -9,7 +9,7 @@
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
     "license": "MIT",
     "peerDependencies": {
-        "@anireact/babel-config": "1.0.0-wip.8",
+        "@anireact/babel-config": "1.0.0-wip.9",
         "eslint": "^5.9.0",
         "eslint-codeframe-formatter": "^1.0.2",
         "prettier": "^1.15.2",
