@@ -13,5 +13,8 @@ module.exports = () => ({
         ],
         require('@babel/preset-typescript'),
     ],
-    plugins: [require('@babel/plugin-transform-runtime')],
+    plugins: [
+        require('@babel/plugin-transform-runtime'),
+        [require('@babel/plugin-proposal-class-properties'), { loose: true }],
+    ],
 });
