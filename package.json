@@ -10,6 +10,7 @@
         "fix": "eslint --fix --ext '.js,.ts' -f ./node_modules/eslint-codeframe-formatter . && prettier --write './**/*.{js,jsx,ts,tsx,css,less,scss,html,json,md}'"
     },
     "devDependencies": {
+        "@anireact/jest-config": "./@anireact/jest-config",
         "@anireact/new": "./@anireact/new",
         "@babel/cli": "^7.1.5",
         "@babel/core": "^7.1.6",

@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@anireact/jest-config@./@anireact/jest-config":
+  version "1.0.0-wip.12"
+  dependencies:
+    "@anireact/babel-config" "^1.0.0-wip.12"
+
 "@anireact/new@./@anireact/new":
   version "1.0.0-wip.12"
   dependencies:
