@@ -1,0 +1,19 @@
+{
+    "name": "@anireact/jest-config",
+    "version": "1.0.0-wip.11",
+    "description": "anireact’s Jest config.",
+    "main": "index.js",
+    "repository": "anireact/tooling",
+    "homepage": "https://github.com/anireact/tooling/tree/master/@anireact/jest-config",
+    "bugs": "https://github.com/anireact/tooling/issues?q=is:issue+label:@anireact/jest-config",
+    "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
+    "license": "MIT",
+    "peerDependencies": {
+        "babel-core": "^7.0.0-bridge",
+        "babel-jest": "^23.6.0",
+        "jest": "^23.6.0"
+    },
+    "dependencies": {
+        "@anireact/babel-config": "^1.0.0-wip.11"
+    }
+}
