@@ -2,17 +2,6 @@
 # yarn lockfile v1
 
 
-"@anireact/new@./@anireact/new":
-  version "1.0.0-wip.9"
-  dependencies:
-    cosmiconfig "^5.0.7"
-    cross-spawn "^6.0.5"
-    enquirer "^2.0.7"
-    json-stable-stringify "^1.0.1"
-    mkdirp "^0.5.1"
-    upath "^1.1.0"
-    yargs "^12.0.5"
-
 "@babel/cli@^7.1.5":
   version "7.1.5"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.1.5.tgz#4ccf0a8cdabeefdd8ce955384530f050935bc4d7"
@@ -2615,6 +2604,13 @@ eslint-plugin-typescript@^0.13.0:
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-typescript/-/eslint-plugin-typescript-0.13.0.tgz#07fa9a166dee1daff14716c70fb8fb7c6583d852"
   integrity sha512-dN8EwZfkOobYJ6VCFJ0Kd39OLSectdJlkG5L+VmA2BtMunZALQus6XLx21Gkj6vmfmUDk6uEGCB7JCszhvZoTA==
+  dependencies:
+    requireindex "~1.1.0"
+
+eslint-plugin-typescript@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-typescript/-/eslint-plugin-typescript-0.14.0.tgz#068549c3f4c7f3f85d88d398c29fa96bf500884c"
+  integrity sha512-2u1WnnDF2mkWWgU1lFQ2RjypUlmRoBEvQN02y9u+IL12mjWlkKFGEBnVsjs9Y8190bfPQCvWly1c2rYYUSOxWw==
   dependencies:
     requireindex "~1.1.0"
 

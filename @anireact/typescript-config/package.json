@@ -1,6 +1,6 @@
 {
     "name": "@anireact/typescript-config",
-    "version": "1.0.0-wip.9",
+    "version": "1.0.0-wip.11",
     "description": "anireact’s TypeScript config.",
     "main": "index.js",
     "repository": "anireact/tooling",
