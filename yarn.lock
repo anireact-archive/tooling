@@ -3,7 +3,7 @@
 
 
 "@anireact/new@./@anireact/new":
-  version "1.0.0-wip.11"
+  version "1.0.0-wip.12"
   dependencies:
     cosmiconfig "^5.0.7"
     cross-spawn "^6.0.5"
