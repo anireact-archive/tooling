@@ -90,7 +90,6 @@ module.exports = {
         'no-iterator': error,
         'no-lone-blocks': error,
         'no-loop-func': error,
-        'no-magic-numbers': [error, { ignore: [0, 1, -1] }],
         'no-multi-str': error,
         'no-new': error,
         'no-new-func': error,
@@ -157,12 +156,10 @@ module.exports = {
         // endregion NodeJS and CommonJS
 
         // region Stylistic issues
-        'func-name-matching': error,
-        'func-names': [error, 'as-needed'],
         'func-style': error,
         'id-match': off, // TODO: Configure.
         'linebreak-style': error,
-        'lines-between-class-members': off, // Fuck off. TODO: Configure.
+        'lines-between-class-members': off, // TODO: Configure.
         'max-depth': error,
         'max-lines-per-function': error,
         'max-nested-callbacks': [error, 3],
@@ -421,7 +418,6 @@ module.exports = {
             rules: {
                 'import/no-commonjs': off,
                 'sort-keys': off,
-                'no-magic-numbers': off,
             },
         },
     ],
