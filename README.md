@@ -35,7 +35,7 @@ It may be used without any arguments;
 in such case it switches to interactive wizard-like interface.
 
 The `new.config.js` file in this repository provides example configuration
-with post-creation command.
+with post-creation commands.
 
 ## License
 
