@@ -3,12 +3,12 @@
 
 
 "@anireact/jest-config@./@anireact/jest-config":
-  version "1.0.0-wip.12"
+  version "1.0.0-wip.13"
   dependencies:
-    "@anireact/babel-config" "^1.0.0-wip.12"
+    "@anireact/babel-config" "^1.0.0-wip.13"
 
 "@anireact/new@./@anireact/new":
-  version "1.0.0-wip.12"
+  version "1.0.0-wip.13"
   dependencies:
     cosmiconfig "^5.0.7"
     cross-spawn "^6.0.5"
@@ -96,6 +96,17 @@
     "@babel/helper-hoist-variables" "^7.0.0"
     "@babel/traverse" "^7.1.0"
     "@babel/types" "^7.0.0"
+
+"@babel/helper-create-class-features-plugin@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.2.1.tgz#f6e8027291669ef64433220dc8327531233f1161"
+  integrity sha512-EsEP7XLFmcJHjcuFYBxYD1FkP0irC8C9fsrt2tX/jrAi/eTnFI6DOPgVFb+WREeg1GboF+Ib+nCHbGBodyAXSg==
+  dependencies:
+    "@babel/helper-function-name" "^7.1.0"
+    "@babel/helper-member-expression-to-functions" "^7.0.0"
+    "@babel/helper-optimise-call-expression" "^7.0.0"
+    "@babel/helper-plugin-utils" "^7.0.0"
+    "@babel/helper-replace-supers" "^7.1.0"
 
 "@babel/helper-define-map@^7.1.0":
   version "7.1.0"
@@ -259,6 +270,14 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/helper-remap-async-to-generator" "^7.1.0"
     "@babel/plugin-syntax-async-generators" "^7.0.0"
+
+"@babel/plugin-proposal-class-properties@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.2.1.tgz#c734a53e0a1ec40fe5c22ee5069d26da3b187d05"
+  integrity sha512-/4FKFChkQ2Jgb8lBDsvFX496YTi7UWTetVgS8oJUpX1e/DlaoeEK57At27ug8Hu2zI2g8bzkJ+8k9qrHZRPGPA==
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.2.1"
+    "@babel/helper-plugin-utils" "^7.0.0"
 
 "@babel/plugin-proposal-json-strings@^7.0.0":
   version "7.0.0"
