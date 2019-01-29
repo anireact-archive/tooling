@@ -7,7 +7,7 @@
         "esModuleInterop": true,
         "experimentalDecorators": true,
         "noUnusedLocals": true,
-        "noUnusedParameters": true
-    },
-    "exclude": ["dist", "node_modules"]
+        "noUnusedParameters": true,
+        "jsx": "preserve"
+    }
 }
