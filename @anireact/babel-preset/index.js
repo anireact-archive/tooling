@@ -1,4 +1,5 @@
 /* eslint-disable global-require */
+/* eslint-disable max-lines-per-function */
 
 module.exports = () => ({
     presets: [
