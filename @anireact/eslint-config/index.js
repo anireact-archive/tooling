@@ -217,7 +217,6 @@ module.exports = {
             },
         ],
         'prefer-object-spread': error,
-        'sort-keys': error,
         'spaced-comment': error,
         // endregion Stylistic issues
 
@@ -391,8 +390,7 @@ module.exports = {
         {
             files: ['*.js'],
             rules: {
-                'import/no-commonjs': off,
-                'sort-keys': off,
+                'import/no-commonjs': off
             },
         },
     ],
