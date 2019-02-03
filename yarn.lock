@@ -3,12 +3,12 @@
 
 
 "@anireact/jest-config@./@anireact/jest-config":
-  version "1.0.0-wip.15"
+  version "1.0.0-wip.16"
   dependencies:
-    "@anireact/babel-config" "^1.0.0-wip.15"
+    "@anireact/babel-config" "^1.0.0-wip.16"
 
 "@anireact/new@./@anireact/new":
-  version "1.0.0-wip.15"
+  version "1.0.0-wip.16"
   dependencies:
     cosmiconfig "^5.0.7"
     cross-spawn "^6.0.5"

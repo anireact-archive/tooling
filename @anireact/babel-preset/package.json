@@ -7,7 +7,7 @@
     "main": "index.js",
     "name": "@anireact/babel-preset",
     "repository": "anireact/tooling",
-    "version": "1.0.0-wip.15",
+    "version": "1.0.0-wip.16",
     "dependencies": {},
     "devDependencies": {
         "@babel/core": "^7.1.6",
