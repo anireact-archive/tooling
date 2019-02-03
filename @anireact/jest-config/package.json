@@ -1,6 +1,6 @@
 {
     "name": "@anireact/jest-config",
-    "version": "1.0.0-wip.14",
+    "version": "1.0.0-wip.15",
     "description": "anireact’s Jest config.",
     "main": "index.js",
     "repository": "anireact/tooling",
@@ -14,6 +14,6 @@
         "jest": "^23.6.0"
     },
     "dependencies": {
-        "@anireact/babel-config": "^1.0.0-wip.14"
+        "@anireact/babel-config": "^1.0.0-wip.15"
     }
 }

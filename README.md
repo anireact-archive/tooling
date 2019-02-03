@@ -9,6 +9,9 @@
         `# Peer dependencies` \
         @commitlint/cli \
         @babel/core babel-core@^7.0.0-bridge \
+        @babel/pligin-{proposal-class-properties,syntax-dynamic-import,transform-runtime} \
+        @babel/preset-{env,react,typescript} \
+        styled-jsx \
         lerna prettier typescript eslint husky jest \
         babel-eslint eslint-codeframe-formatter babel-jest \
         `# Configs` \
