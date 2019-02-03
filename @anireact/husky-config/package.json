@@ -7,9 +7,9 @@
     "main": "index.js",
     "name": "@anireact/husky-config",
     "repository": "anireact/tooling",
-    "version": "1.0.0-wip.18",
+    "version": "1.0.0-wip.19",
     "peerDependencies": {
-        "@anireact/commitlint-config": "^1.0.0-wip.18",
+        "@anireact/commitlint-config": "^1.0.0-wip.19",
         "husky": "^1.3.1"
     }
 }
