@@ -1,6 +1,6 @@
 {
     "name": "@anireact/commitlint-config",
-    "version": "1.0.0-wip.17",
+    "version": "1.0.0-wip.18",
     "description": "anireact’s CommitLint config.",
     "main": "index.js",
     "repository": "anireact/tooling",
