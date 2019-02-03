@@ -8,7 +8,7 @@
     yarn add -DW \
         `# Peer dependencies` \
         @commitlint/cli \
-        @babel/core babel-core@^7.0.0-bridge \
+        @babel/core \
         @babel/plugin-{proposal-class-properties,syntax-dynamic-import,transform-runtime} \
         @babel/preset-{env,react,typescript} \
         styled-jsx \
