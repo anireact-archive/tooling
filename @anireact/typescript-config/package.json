@@ -1,6 +1,6 @@
 {
     "name": "@anireact/typescript-config",
-    "version": "1.0.0-wip.16",
+    "version": "1.0.0-wip.17",
     "description": "anireact’s TypeScript config.",
     "main": "index.js",
     "repository": "anireact/tooling",
@@ -9,6 +9,6 @@
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
     "license": "MIT",
     "peerDependencies": {
-        "typescript": "^3.2.0-rc"
+        "typescript": "^3.3.1"
     }
 }

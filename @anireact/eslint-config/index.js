@@ -23,7 +23,7 @@ module.exports = {
         'array-func',
         'fp',
         'promise',
-        'typescript',
+        '@typescript-eslint',
         'jest',
         'no-use-extend-native',
         'prettier',
@@ -366,7 +366,7 @@ module.exports = {
     overrides: [
         {
             files: ['*.ts', '*.tsx'],
-            parser: 'typescript-eslint-parser',
+            parser: '@typescript-eslint/parser',
             parserOptions: {
                 sourceType: 'module',
                 ecmaVersion: 10,
@@ -375,12 +375,13 @@ module.exports = {
                     jsx: true,
                 },
                 jsx: true,
+                project: './tsconfig.json',
             },
             rules: {
                 // region TypeScript
-                'typescript/adjacent-overload-signatures': error,
-                'typescript/class-name-casing': error,
-                'typescript/member-ordering': [
+                '@typescript-eslint/adjacent-overload-signatures': error,
+                '@typescript-eslint/class-name-casing': error,
+                '@typescript-eslint/member-ordering': [
                     error,
                     {
                         default: [
@@ -400,12 +401,12 @@ module.exports = {
                         ],
                     },
                 ],
-                'typescript/no-angle-bracket-type-assertion': error,
-                'typescript/no-inferrable-types': error,
-                'typescript/no-namespace': error,
-                'typescript/no-triple-slash-reference': error,
-                'typescript/no-var-requires': error,
-                'typescript/prefer-namespace-keyword': error,
+                '@typescript-eslint/no-angle-bracket-type-assertion': error,
+                '@typescript-eslint/no-inferrable-types': error,
+                '@typescript-eslint/no-namespace': error,
+                '@typescript-eslint/no-triple-slash-reference': error,
+                '@typescript-eslint/no-var-requires': error,
+                '@typescript-eslint/prefer-namespace-keyword': error,
                 // endregion TypeScript
             },
         },
