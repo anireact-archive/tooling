@@ -11,6 +11,7 @@
         @babel/core \
         @babel/plugin-{proposal-class-properties,syntax-dynamic-import,transform-runtime} \
         @babel/preset-{env,react,typescript} \
+        @typescript-eslint/{eslint-plugin,parser} \
         styled-jsx \
         lerna prettier typescript eslint husky jest \
         babel-eslint eslint-codeframe-formatter babel-jest \
