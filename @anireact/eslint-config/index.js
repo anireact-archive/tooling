@@ -390,7 +390,7 @@ module.exports = {
         {
             files: ['*.js'],
             rules: {
-                'import/no-commonjs': off
+                'import/no-commonjs': off,
             },
         },
     ],
