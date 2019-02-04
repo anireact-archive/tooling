@@ -6,7 +6,6 @@ module.exports = () => ({
         [
             require('@babel/preset-env'),
             {
-                loose: true,
                 modules: false,
                 shippedProposals: true,
                 useBuiltIns: 'usage',
@@ -17,7 +16,7 @@ module.exports = () => ({
     ],
     plugins: [
         require('@babel/plugin-transform-runtime'),
-        [require('@babel/plugin-proposal-class-properties'), { loose: true }],
+        require('@babel/plugin-proposal-class-properties'),
         require('@babel/plugin-syntax-dynamic-import'),
         [
             require('styled-jsx/babel'),
@@ -34,7 +33,6 @@ module.exports = () => ({
                 [
                     require('@babel/preset-env'),
                     {
-                        loose: true,
                         modules: 'commonjs',
                         shippedProposals: true,
                         useBuiltIns: 'usage',
@@ -45,7 +43,7 @@ module.exports = () => ({
             ],
             plugins: [
                 require('@babel/plugin-transform-runtime'),
-                [require('@babel/plugin-proposal-class-properties'), { loose: true }],
+                require('@babel/plugin-proposal-class-properties'),
                 require('@babel/plugin-syntax-dynamic-import'),
                 [
                     require('styled-jsx/babel'),
